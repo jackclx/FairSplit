@@ -32,8 +32,7 @@ def reconnect_if_needed():
     try:
         if connection is None or not connection.is_connected():
             print("Reconnecting to the database...")
-            # connection = create_connection("localhost", "root", '661063lt', 'EasySplit')
-            connection = create_connection("jackclx.mysql.pythonanywhere-services.com", "jackclx", '661063lt', 'jackclx$EasySplit')
+            connection = create_connection("","","","")
     except Error as err:
         print(f"Error while reconnecting: {err}")
         raise
