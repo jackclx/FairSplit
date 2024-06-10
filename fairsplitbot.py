@@ -550,10 +550,9 @@ async def handle_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 if __name__ == '__main__':
-    token_id = '6824458601:AAGrOOx8Vr1Wenm0mKQJnhGog2HhrK6min4'
+    token_id = ''
     application = ApplicationBuilder().token(token_id).build()
-    # connection = create_connection("localhost", "root", '661063lt', 'EasySplit')
-    connection = create_connection("jackclx.mysql.pythonanywhere-services.com", "jackclx", '661063lt', 'jackclx$EasySplit')
+    connection = create_connection("", "", '', '')
 
 
 
